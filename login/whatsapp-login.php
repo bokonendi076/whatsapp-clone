@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hey!</h1>
+    <h1>hoi!</h1>
 </body>
 </html>
 
