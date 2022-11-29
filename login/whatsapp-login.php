@@ -10,7 +10,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hoi!</h1>
+    <!-- Vanaf deze DIV begint het formulier -->
+    <div class="login-form">
+        <form action="" method="" type="">
+            <label for="">Username</label>
+            <input type="text"><br>
+            
+            <label for="" type="password">Password</label>
+            <input type="text">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <!-- Vanaf de DIV hierboven eindigd het formulier -->
 </body>
 </html>
 
