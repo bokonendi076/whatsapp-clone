@@ -7,6 +7,8 @@ require_once dirname(__DIR__) . './header.php';
 <!-- GEBRUIK HIERVOOR DE SCREENSHOT DIE IN TRELLO STAAT EN BOUW DIE NA SUCCES! -->
 
     <!-- Vanaf deze DIV begint het formulier -->
+    
+<div class="container">
     <div class="login-form">
         <form action="login.php" method="POST">
             <input type="hidden" name="action" value="login">
@@ -27,5 +29,6 @@ require_once dirname(__DIR__) . './header.php';
         </form>
     </div>
     <!-- Vanaf de DIV hierboven eindigd het formulier -->
+
 
     <?php require_once dirname(__DIR__) . '/footer.php';?> 

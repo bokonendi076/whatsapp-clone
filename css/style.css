@@ -18,3 +18,21 @@ input {
     border: 1px solid black;
     font-size: 15px;
 }
+
+/* css whatsapp login */
+
+body{
+    height: 70vh;
+    background: linear-gradient(
+      to top,
+      black 0%,
+      black 50%,
+      green 50%,
+      green 100%
+    );
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* whatsapp login end */
