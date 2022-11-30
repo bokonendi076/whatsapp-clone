@@ -1,3 +1,6 @@
+<?php 
+require_once dirname(__DIR__) . '/whatsapp-clone/db.php';;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,3 +11,11 @@
     <title>Whatsapp</title>
 </head>
 <body>
+    <?php
+        if(isset($_SESSION['loggedIn']) == true){
+            echo '<a href="./logout.php">Logout</a>';
+        } else {
+            
+        }
+    ?>
+

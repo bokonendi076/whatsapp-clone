@@ -4,8 +4,14 @@
 }
 
 html {
-    font-family: 'Arial';
+    font-family: 'Segoe ui';
 }
+
+/* Error msg */
+.error-msg {
+    color: red;
+}
+/* end error msg */
 
 input {
     height: 30px;
