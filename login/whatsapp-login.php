@@ -10,6 +10,7 @@ require_once dirname(__DIR__) . './header.php';
     
 <div class="container">
     <div class="login-form">
+        <h1 class="login-form-title">Login om WhatsApp op uw computer te gebruiken</h1>
         <form action="login.php" method="POST">
             <input type="hidden" name="action" value="login">
 
@@ -19,11 +20,8 @@ require_once dirname(__DIR__) . './header.php';
             }
             ?>
 
-            <label for="">Username</label><br>
-            <input class="form-control" type="text" name="username"><br><br>
-            
-            <label for="" type="password">Password</label><br>
-            <input class="form-control" type="password" name="password"><br>
+            <input class="form-control" type="text" name="username" placeholder="username"><br><br>
+            <input class="form-control" type="password" name="password" placeholder="password"><br>
 
             <button class="btn btn-dark" type="submit" value="submit">Login</button>
         </form>
