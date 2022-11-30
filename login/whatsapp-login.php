@@ -3,7 +3,13 @@
 <!-- GEBRUIK HIERVOOR DE SCREENSHOT DIE IN TRELLO STAAT EN BOUW DIE NA SUCCES! -->
 
     <!-- Vanaf deze DIV begint het formulier -->
-    <div class="container">
+
+    <body>
+    
+    </body
+    
+    
+    <!-- <div class="container">
     <div class="login-form">
         <form action="login.php" method="post" type="">
             <label for="">Username</label><br>
@@ -14,8 +20,6 @@
 
             <button class="btn btn-dark" type="submit">Login</button>
         </form>
-    </div>
-    </div>
-    <!-- Vanaf de DIV hierboven eindigd het formulier -->
+
 
     <?php require_once dirname(__DIR__) . '/footer.php';?> 
