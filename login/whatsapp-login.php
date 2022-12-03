@@ -4,7 +4,7 @@ session_status();
 require_once dirname(__DIR__) . './header.php';
     // Laat de gebruiker zien dat hij/zei nog moet inloggen
     if (isset($_GET['error'])) {
-        echo '<script> alert("Je bent nog niet ingelogd") </script>';
+        echo '<div class="error">' . $_GET['error'] . '</div>';
     }
 ?> 
 <!-- BEGIN HIER MET HET BOUWEN VAN DE USER INTERFACE VOOR HET LOGIN SCHERM -->
@@ -21,8 +21,18 @@ require_once dirname(__DIR__) . './header.php';
   
 <div class="form-container">
     <div class="login-form">
-        <h1 class="login-form-title">Login om WhatsApp op uw computer te gebruiken</h1>
-        <form action="login.php" method="POST">
+        <div class="form-tutorial">
+            <h1 class="login-form-title">Login om WhatsApp op uw <br> computer te gebruiken.</h1>
+            <ol>
+                <li>Open WhatsApp op uw webbrowser</li>
+                <li>Vul uw gegevens in in het <b>Formulier</b></li>
+                <li>Tik vervolgens op Aanmelden</li>
+                <li>Geniet van <b>WhatsApp</b> op uw browser</li>
+            </ol>
+
+            <a href="#">Ik heb nog geen account?!</a>
+        </div>
+        <form class="login" action="login.php" method="POST">
             <input type="hidden" name="action" value="login">
 
             <?php 
@@ -40,15 +50,6 @@ require_once dirname(__DIR__) . './header.php';
             </div>
             
         </form>
-
-        <div class="form-tutorial">
-            <ol>
-                <li>Open WhatsApp op uw webbrowser</li>
-                <li>Vul uw gegevens in in het <b>Formulier</b></li>
-                <li>Tik vervolgens op Aanmelden</li>
-                <li>Geniet van <b>WhatsApp</b> op uw browser</li>
-            </ol>
-        </div>
     </div>
 
     <div class="form-ad">
