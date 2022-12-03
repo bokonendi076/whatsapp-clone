@@ -2,6 +2,10 @@
 session_start();
 session_status();
 require_once dirname(__DIR__) . './header.php';
+    // Laat de gebruiker zien dat hij/zei nog moet inloggen
+    if (isset($_GET['error'])) {
+        echo '<script> alert("Je bent nog niet ingelogd") </script>';
+    }
 ?> 
 <!-- BEGIN HIER MET HET BOUWEN VAN DE USER INTERFACE VOOR HET LOGIN SCHERM -->
 <!-- GEBRUIK HIERVOOR DE SCREENSHOT DIE IN TRELLO STAAT EN BOUW DIE NA SUCCES! -->
@@ -22,6 +26,7 @@ require_once dirname(__DIR__) . './header.php';
             <input type="hidden" name="action" value="login">
 
             <?php 
+            // Laat het Formulier error messages zien aan de gebruiker
             if (isset($_GET['msg'])) {
                 echo '<p class="error-msg">' . $_GET['msg'] . '</p>';
             }
@@ -38,10 +43,10 @@ require_once dirname(__DIR__) . './header.php';
 
         <div class="form-tutorial">
             <ol>
-                <li>Open WhatsAppp op uw webbrowser</li>
-                <li>Vul uw gegevens in het <b>Formulier</b></li>
+                <li>Open WhatsApp op uw webbrowser</li>
+                <li>Vul uw gegevens in in het <b>Formulier</b></li>
                 <li>Tik vervolgens op Aanmelden</li>
-                <li>Geniet vam <b>WhatsApp</b> op uw browser</li>
+                <li>Geniet van <b>WhatsApp</b> op uw browser</li>
             </ol>
         </div>
     </div>
