@@ -12,6 +12,30 @@ body {
 }
 
 /* Error msg */
+.error {
+    animation: msg-appear 5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #111b21;
+    font-weight: 500;
+    box-shadow: 0px 2px 15px rgba(18, 18, 18, 0.468);
+}
+
+@keyframes msg-appear {
+    0% {margin-top: -100px;}
+    40% {margin-top: 10px;}
+    75% {margin-top: 10px;}
+    100% {margin-top: -100px;}
+}
+
 .error-msg {
     color: red;
 }
@@ -40,7 +64,7 @@ input {
 /* end logout btn */
 
 .login-footer {
-    height: calc(100vh - 149px);
+    height: calc(100vh - 209px);
     width: 100%;
     background-color: #111B21;
 }
@@ -54,38 +78,40 @@ input {
     display: flex; 
     justify-content: center;
     align-items: center;
-    width: 55%;
-    padding-bottom: 100px;
-    padding-top: 10px;
+    width: 40%;
+    padding-bottom: 150px;
+    padding-top: 20px;
     color: #fff;
 }
 
 .logo svg {
     margin-right: 5px;
-    transform: scale(0.8);
 }
 
 .login-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
+    width: 60%;
     background: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px 50px;
-    box-shadow: 0px 2px 10px rgba(24, 24, 24, 0.527);
+    box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.527);
     border-radius: 10px;
 }
 
 .login-form-title {
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
     color: #41525d;
     margin-bottom: 50px;
 }
 
 .login-form input {
-    border: 0px;
-    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.308);
+    border: 3px solid #7272723d;
     padding: 5px 20px;
     height: 50px;
     width: 90%;
@@ -93,6 +119,7 @@ input {
 }
 
 .login-form input:focus {
+    border: 3px solid #fff;
     outline: 2px solid #00a884;
     box-shadow: 0px 2px 10px #00a88485;
 }
@@ -122,11 +149,26 @@ input {
     width: 100%;
 }
 
+.form-tutorial {
+    width: 50%;
+}
+
+.form-tutorial a {
+    color: #00a884;
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .form-tutorial ol{
     padding: 20px;
     line-height: 30px;
     font-size: 18px;
     color: #41525d;
+    margin-bottom: 20px;
+}
+
+.login {
+    width: 55%;
 }
 
 /* whatsapp login end */
