@@ -13,7 +13,7 @@ body {
 
 /* Error msg */
 .error {
-    animation: msg-appear 5s;
+    animation: msg-appear 4.9s;
     animation-fill-mode: forwards;
     position: absolute;
     top: 0;

@@ -23,7 +23,7 @@ if(isset($_SESSION['loggedIn']) == true){
         <div class="form-tutorial">
             <h1 class="login-form-title">Login om WhatsApp op uw <br> computer te gebruiken.</h1>
             <ol>
-                <li>Open WhatsApp op uw webbrowser</li>
+                <li>Open WhatsApp op uw webbrowser.</li>
                 <li>Vul uw gegevens in in het <b>Formulier</b></li>
                 <li>Tik vervolgens op Aanmelden</li>
                 <li>Geniet van <b>WhatsApp</b> op uw browser</li>
