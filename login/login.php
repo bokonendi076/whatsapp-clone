@@ -17,7 +17,14 @@ if ($_POST['action'] == 'login') {
         exit;
     }
 
+    // query haalt alle ingelogde gebruiker op
     $user = $stmt->fetch();
+
+    // query haalt alle gebruikers op uit de database
+    $sql = "SELECT * FROM users";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $users = $stmt->fetchAll();
 
     $_SESSION['user_id'] = $user['id'];
     $_SESSION['username'] = $user['name'];

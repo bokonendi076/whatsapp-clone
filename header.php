@@ -11,11 +11,4 @@ require_once dirname(__DIR__) . '/whatsapp-clone/db.php';;
     <title>Whatsapp</title>
 </head>
 <body>
-    <?php
-        if(isset($_SESSION['loggedIn']) == true){
-            echo '<a class="logout-btn" href="./logout.php">Logout</a>';
-        } else {
-            
-        }
-    ?>
 

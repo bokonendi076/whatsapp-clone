@@ -1,7 +1,11 @@
 <?php 
 session_start();
-session_status();
 require_once dirname(__DIR__) . './header.php';
+if(isset($_SESSION['loggedIn']) == true){
+    echo '<a class="logout-btn" href="./logout.php">Logout</a>';
+} else {
+    
+}
     // Laat de gebruiker zien dat hij/zei nog moet inloggen
     if (isset($_GET['error'])) {
         echo '<div class="error">' . $_GET['error'] . '</div>';
@@ -14,7 +18,6 @@ require_once dirname(__DIR__) . './header.php';
         <p>Whatsapp</p>
     </div>
 </div>
-  
 <div class="form-container">
     <div class="login-form">
         <div class="form-tutorial">

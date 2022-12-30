@@ -172,3 +172,85 @@ input {
 }
 
 /* whatsapp login end */
+
+/* CHAT DASHBOARD */
+
+.left-sidebar {
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    background: #f9f7f3;
+    z-index: 999;
+}
+
+.navbar-container {
+    position: fixed;
+    margin-left: 50px;
+    background: #fff;
+    width: 350px;
+    height: 100vh;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+}
+
+.nav-wrapper {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.d-searchbar {
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    padding: 0px 10px;
+    border-bottom: 2px solid #00a884;
+}
+
+.d-searchbar:focus {
+    outline: none;
+}
+
+.nav-chats {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.quick-chat {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quick-chat:hover {
+    background: #ebebeb;
+}
+
+.user-content {
+    margin-left: 20px;
+}
+
+.user-content h4 {
+    margin-top: 2px;
+}
+
+.quick-user-pic img {
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+}
+
+.recent-msg-time {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* END CHAT DASHBOARD */
