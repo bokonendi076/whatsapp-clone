@@ -190,7 +190,7 @@ input {
     width: 350px;
     height: 100vh;
     padding: 0px 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.105);
 }
 
 .nav-wrapper {
@@ -253,4 +253,16 @@ input {
     margin-right: 0;
 }
 
+/* MAIN */
+
+.main {
+    position: fixed;
+    background-image: url('../storage/pattern.png');
+    background-color: #f9f7f3;
+    background-position: center;
+    width: calc(100vw - 440px);
+    height: 100vh;
+    right: 0;
+    
+}
 /* END CHAT DASHBOARD */

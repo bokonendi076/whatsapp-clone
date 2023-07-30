@@ -1,5 +1,6 @@
 <?php 
-require_once dirname(__DIR__) . '/whatsapp-clone/db.php';;
+require_once dirname(__DIR__) . '/whatsapp-clone/db.php';
+require_once dirname(__DIR__) . '/whatsapp-clone/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

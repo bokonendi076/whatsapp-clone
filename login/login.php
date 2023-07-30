@@ -1,6 +1,7 @@
 <?php 
 session_start();
-require_once dirname(__DIR__) . './db.php';;
+require_once dirname(__DIR__) . './db.php';
+require_once dirname(__DIR__) . './functions.php';
 
 if ($_POST['action'] == 'login') {
 
